@@ -1,13 +1,13 @@
 export default function MessageSection() {
   return (
-    <div className="hero-gradient py-24">
+    <div className="hero-gradient py-24 snap-start">
       <div className="max-w-7xl mx-auto px-6">
         <div className="space-y-10 japanese-text text-left">
           <p className="text-2xl md:text-3xl lg:text-4xl text-blue-500">
             「それ、意味あるの？」って言われることに、どこか惹かれてしまう。
           </p>
 
-          <div className="space-y-8 text-lg md:text-xl lg:text-2xl text-blue-500 leading-relaxed">
+          <div className="space-y-8 text-lg md:text-xl lg:text-2xl text-blue-500" style={{ lineHeight: '2.5' }}>
             <p>
               効率とか、正解とか、そういうものを追い求める中で、
               <br />

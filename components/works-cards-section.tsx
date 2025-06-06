@@ -137,7 +137,7 @@ export default function WorksCardsSection() {
   }
 
   return (
-    <div className="hero-gradient py-24">
+    <div className="hero-gradient py-24 snap-start">
       <div className="max-w-7xl mx-auto px-6">
         {/* Works Title */}
         <div className="text-center mb-16">

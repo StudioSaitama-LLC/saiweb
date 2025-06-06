@@ -2,9 +2,9 @@
 
 export default function HeroSection() {
   return (
-    <div className="hero-gradient min-h-screen relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 pt-32 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
+    <div className="hero-gradient min-h-screen relative overflow-hidden snap-start">
+      <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -45,7 +45,7 @@ export default function HeroSection() {
         </div>
 
         {/* HILOWAVE Text - Adjusted position */}
-        <div className="mt-8 lg:mt-12">
+        <div className="mt-4 lg:mt-6">
           <div className="hilowave-text text-center lg:text-left">HILOWAVE</div>
         </div>
 

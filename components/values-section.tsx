@@ -22,7 +22,7 @@ export default function ValuesSection() {
   ]
 
   return (
-    <div className="hero-gradient py-24">
+    <div className="hero-gradient py-24 snap-start">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {values.map((value, index) => (

@@ -28,7 +28,7 @@ export default function ContactSection() {
   }
 
   return (
-    <div className="hero-gradient py-24">
+    <div className="hero-gradient py-24 snap-start">
       <div className="max-w-4xl mx-auto px-6">
         {/* Contact Title */}
         <div className="mb-16">

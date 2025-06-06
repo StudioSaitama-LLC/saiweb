@@ -68,7 +68,7 @@ export default function MembersSection() {
   ]
 
   return (
-    <div className="hero-gradient py-24">
+    <div className="hero-gradient py-24 snap-start">
       <div className="max-w-7xl mx-auto px-6">
         {/* Members Title */}
         <div className="mb-16">
