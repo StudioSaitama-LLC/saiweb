@@ -1,0 +1,59 @@
+"use client"
+
+export default function HeroSection() {
+  return (
+    <div className="hero-gradient min-h-screen relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 pt-32 pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[70vh]">
+          {/* Left Content */}
+          <div className="space-y-8">
+            <div className="space-y-4">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+                <span className="text-blue-500">Discover the</span>
+                <br />
+                <span className="text-blue-600">WAVE</span> <span className="text-blue-500">you</span>
+                <br />
+                <span className="text-blue-500">need,</span>
+                <br />
+                <span className="text-blue-500">and feel the</span>
+                <br />
+                <span className="text-blue-500">New</span> <span className="text-blue-600">WAVE</span>
+                <span className="text-blue-500">.</span>
+              </h1>
+            </div>
+
+            <div className="space-y-4">
+              <div className="text-3xl md:text-4xl text-gray-800 font-medium">
+                We consider
+                <br />
+                your
+                <br />
+                <span className="text-blue-500 font-semibold japanese-text">Daily Life</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - 3D Model Placeholder */}
+          <div className="flex justify-center items-center">
+            <div className="model-viewer-container">
+              <div className="model-viewer-inner">
+                <div className="model-viewer-core"></div>
+              </div>
+              <div className="absolute bottom-16 text-gray-400 text-sm font-medium">3D Model will be here</div>
+            </div>
+          </div>
+        </div>
+
+        {/* HILOWAVE Text - Adjusted position */}
+        <div className="mt-8 lg:mt-12">
+          <div className="hilowave-text text-center lg:text-left">HILOWAVE</div>
+        </div>
+
+        {/* Bottom Indicator */}
+        <div className="flex justify-center mt-8">
+          <div className="w-16 h-1 bg-gray-800 rounded-full"></div>
+        </div>
+      </div>
+    </div>
+  )
+}
