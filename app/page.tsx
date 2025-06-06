@@ -18,21 +18,21 @@ const ModelViewer = dynamic(() => import('@/components/model-viewer'), {
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f5f8ff]">
-      <section className="relative flex flex-col min-h-screen justify-start items-center pt-12 pb-0 overflow-hidden">
+      <section id="top" className="relative flex flex-col min-h-screen justify-start items-center pt-12 pb-0 overflow-hidden">
         {/* ナビゲーションバー */}
         <Navbar />
         <div className="flex flex-row w-full max-w-7xl mx-auto mt-4 items-center justify-between px-6 z-10">
           {/* 左側テキスト */}
           <div className="flex-1 min-w-[320px]">
             <h1 className="text-5xl md:text-6xl font-bold text-[#2576e5] leading-tight mb-8">
-              Discover the <span className="text-[#2576e5]">WAVE</span> you<br />
-              need,<br />
-              and feel the<br />
-              New <span className="text-[#2576e5]">WAVE</span>.
+              <span className="text-[#2576e5]">Polish the HORN you</span><br />
+              <span className="text-blue-600">own,</span><br />
+              <span className="text-[#2576e5]">sharpen it,</span><br />
+              <span className="text-blue-600">sharpen, sharpen it.</span>
             </h1>
             <div className="text-2xl text-black mb-32">
-              We consider<br />
-              your <span className="text-[#2576e5]">Daily Life</span>
+              Are you ready?<br />
+              The <span className="text-blue-600">SAI</span> has arrived.
             </div>
           </div>
           {/* 右側の3Dモデル（画面いっぱい） */}

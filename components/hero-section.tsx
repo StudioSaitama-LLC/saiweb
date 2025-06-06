@@ -9,26 +9,17 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="text-blue-500">Discover the</span>
-                <br />
-                <span className="text-blue-600">WAVE</span> <span className="text-blue-500">you</span>
-                <br />
-                <span className="text-blue-500">need,</span>
-                <br />
-                <span className="text-blue-500">and feel the</span>
-                <br />
-                <span className="text-blue-500">New</span> <span className="text-blue-600">WAVE</span>
-                <span className="text-blue-500">.</span>
+                <span className="text-blue-500">Discover the HORN you</span><br />
+                <span className="text-blue-600">own,</span><br />
+                <span className="text-blue-500">sharpen it,</span><br />
+                <span className="text-blue-600">sharpen, sharpen it.</span>
               </h1>
             </div>
 
             <div className="space-y-4">
               <div className="text-3xl md:text-4xl text-gray-800 font-medium">
-                We consider
-                <br />
-                your
-                <br />
-                <span className="text-blue-500 font-semibold japanese-text">Daily Life</span>
+                Are you ready?<br />
+                The <span className="text-blue-600">SAI</span> has arrived.
               </div>
             </div>
           </div>

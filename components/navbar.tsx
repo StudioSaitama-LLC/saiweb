@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, Instagram, Phone, Menu, X } from "lucide-react"
+import { Home, Instagram, Mail, Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
 
 export default function Navbar() {
@@ -22,9 +22,9 @@ export default function Navbar() {
   }, [scrolled])
 
   const navItems = [
-    { icon: Home, label: "ホーム" },
+    { icon: Home, label: "ホーム", href: "#top" },
     { icon: Instagram, label: "Instagram" },
-    { icon: Phone, label: "お問い合わせ" },
+    { icon: Mail, label: "お問い合わせ", href: "#contact" },
   ]
 
   return (
@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-4 ml-8">
           {navItems.map((item, index) => (
-            <NavIcon key={index} icon={item.icon} />
+            <NavIcon key={index} icon={item.icon} href={item.href} />
           ))}
         </div>
 
@@ -56,7 +56,7 @@ export default function Navbar() {
           <div className="flex flex-col space-y-4">
             {navItems.map((item, index) => (
               <div key={index} className="flex items-center space-x-3">
-                <NavIcon icon={item.icon} />
+                <NavIcon icon={item.icon} href={item.href} />
                 <span className="text-sm text-gray-600 japanese-text">{item.label}</span>
               </div>
             ))}
@@ -67,10 +67,10 @@ export default function Navbar() {
   )
 }
 
-function NavIcon({ icon: Icon }: { icon: any }) {
+function NavIcon({ icon: Icon, href }: { icon: any; href?: string }) {
   return (
-    <div className="p-3 bg-blue-50 bg-opacity-70 rounded-full text-blue-500 hover:bg-blue-100 hover:text-blue-600 transition-all cursor-pointer backdrop-blur-sm">
+    <a href={href} className="p-3 bg-blue-50 bg-opacity-70 rounded-full text-blue-500 hover:bg-blue-100 hover:text-blue-600 transition-all cursor-pointer backdrop-blur-sm">
       <Icon size={20} />
-    </div>
+    </a>
   )
 }
