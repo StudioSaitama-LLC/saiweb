@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { X, ImageIcon } from "lucide-react"
 
 interface WorkItem {
@@ -18,6 +18,8 @@ interface WorkItem {
 
 export default function WorksCardsSection() {
   const [selectedWork, setSelectedWork] = useState<WorkItem | null>(null)
+  const [activeIdx, setActiveIdx] = useState(0)
+  const scrollRef = useRef<HTMLDivElement>(null)
 
   const works: WorkItem[] = [
     {
@@ -136,39 +138,71 @@ export default function WorksCardsSection() {
     setSelectedWork(null)
   }
 
+  // 横スクロール位置でアクティブなカードを判定
+  useEffect(() => {
+    const el = scrollRef.current
+    if (!el) return
+    const onScroll = () => {
+      const scrollLeft = el.scrollLeft
+      const cardWidth = 440 // min-w + gap の目安
+      const idx = Math.round(scrollLeft / cardWidth)
+      setActiveIdx(idx)
+    }
+    el.addEventListener('scroll', onScroll)
+    return () => el.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <div className="hero-gradient py-24 snap-start">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Works Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-blue-500 mb-4">Works</h2>
-        </div>
+        {/* Works Title 削除 */}
+        {/* <div className="text-center mb-16">
+          <h2 className="text-5xl md:text-6xl font-bold text-blue-500 mb-4">CLIENT WORKS</h2>
+        </div> */}
 
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {works.map((work) => (
-            <div
-              key={work.id}
-              className="nav-pill rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group"
-              onClick={() => openModal(work)}
-            >
-              {/* Image Placeholder */}
-              <div className="bg-gray-200 rounded-lg h-48 mb-6 flex items-center justify-center">
-                <ImageIcon size={48} className="text-gray-400" />
+        {/* 横スクロールのカード */}
+        <div className="relative">
+          <div ref={scrollRef} className="flex flex-row gap-8 overflow-x-auto pb-8 scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
+            {works.map((work) => (
+              <div
+                key={work.id}
+                className="nav-pill rounded-2xl p-10 min-w-[420px] max-w-[480px] h-[420px] cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group flex flex-col"
+                onClick={() => openModal(work)}
+              >
+                {/* Image Placeholder */}
+                <div className="bg-gray-200 rounded-lg h-64 mb-6 flex items-center justify-center">
+                  <ImageIcon size={64} className="text-gray-400" />
+                </div>
+
+                {/* Content */}
+                <div className="space-y-4 flex-1">
+                  <h3 className="text-3xl font-bold text-blue-600">{work.title}</h3>
+                  <p className="text-blue-500 japanese-text text-lg">{work.subtitle}</p>
+                  <button className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 flex items-center space-x-2 mt-4">
+                    <span>Read</span>
+                    <span>→</span>
+                  </button>
+                </div>
               </div>
-
-              {/* Content */}
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-blue-600">{work.title}</h3>
-                <p className="text-blue-500 japanese-text">{work.subtitle}</p>
-
-                <button className="bg-purple-500 hover:bg-purple-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center space-x-2">
-                  <span>Read</span>
-                  <span>→</span>
-                </button>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          {/* ドットインジケーター */}
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-[-44px] flex gap-3 z-10">
+            {works.map((_, idx) => (
+              <button
+                key={idx}
+                type="button"
+                aria-label={`カード${idx + 1}へスクロール`}
+                onClick={() => {
+                  const el = scrollRef.current;
+                  if (!el) return;
+                  const cardWidth = 440; // min-w + gap の目安
+                  el.scrollTo({ left: idx * cardWidth, behavior: 'smooth' });
+                }}
+                className={`w-5 h-5 rounded-full border-2 border-white shadow-lg transition-all duration-200 focus:outline-none ${activeIdx === idx ? 'bg-[#2563eb] scale-110' : 'bg-[#60a5fa] opacity-60'}`}
+              ></button>
+            ))}
+          </div>
         </div>
 
         {/* Modal */}
@@ -229,6 +263,30 @@ export default function WorksCardsSection() {
             </div>
           </div>
         )}
+
+        {/* --- AIXセクション追加 --- */}
+        <section className="mt-32 w-full">
+          <div className="max-w-7xl mx-auto px-6">
+            {/* AIXタイトル */}
+            <div className="hilowave-text text-left mb-16">AIX</div>
+            {/* AIX説明テキスト */}
+            <div className="max-w-3xl mb-12 text-blue-500 text-[36px] leading-[2] text-left font-bold japanese-text" style={{fontWeight: 700}}>
+              <p>AIと人間の体験が融合する新しい時代へ。</p>
+              <p>私たちは、テクノロジーの力で日常に新しい価値を生み出します。</p>
+              <p>直感的で心地よい体験を、すべての人に。</p>
+              <p>未来のAIXが、あなたの生活をもっと豊かにします。</p>
+            </div>
+            {/* 横並びのすりガラスカード */}
+            <div className="flex flex-row gap-8 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
+              {[1,2,3].map((i) => (
+                <div key={i} className="backdrop-blur-lg bg-white/30 border border-white/40 rounded-2xl shadow-lg min-w-[380px] max-w-[420px] h-[320px] p-8 flex flex-col justify-center items-start">
+                  <h3 className="text-2xl font-bold text-blue-600 mb-4">AIX Card {i}</h3>
+                  <p className="text-blue-500 text-lg">これはAIXセクションのダミーテキストです。AIと体験（Experience）を融合した新しい価値を提案します。</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   )
