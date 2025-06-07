@@ -20,16 +20,39 @@ export function InfiniteScroll() {
 
   return (
     <div className="relative w-full overflow-hidden bg-transparent py-12">
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(calc(-100% / 3));
+          }
+        }
+        .animate-scroll {
+          animation: scroll 8s linear infinite;
+          width: calc(100% * 3);
+        }
+        @media (max-width: 768px) {
+          .animate-scroll {
+            animation: scroll 5s linear infinite;
+          }
+          .mobile-tight-space {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+          }
+        }
+      `}</style>
       <div className="flex animate-scroll items-center whitespace-nowrap">
         {[...items, ...items, ...items].map((item, index) => (
           <div
             key={index}
             className={`flex flex-col items-center ${isMobile ? 'mobile-tight-space' : 'mx-20'}`}
           >
-            <span className={`${isMobile ? "text-4xl" : "text-[120px]"} font-bold text-[#3B82F6]`}>
+            <span className={`${isMobile ? "text-[3.5rem]" : "text-[120px]"} font-bold text-[#3B82F6]`}>
               {item.ja}
             </span>
-            <span className={`${isMobile ? "text-3xl" : "text-[24px]"} mt-1 text-[#3B82F6] font-bold`}>
+            <span className={`${isMobile ? "text-lg" : "text-[24px]"} mt-1 text-[#3B82F6] font-bold`}>
               {item.en}
             </span>
           </div>
