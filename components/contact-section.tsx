@@ -32,7 +32,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Contact Title */}
         <div className="mb-16">
-          <div className="hilowave-text text-left text-[clamp(40px,16vw,84px)]">CONTACT</div>
+          <div className="hilowave-text text-left text-[clamp(40px,16vw,256px)]">CONTACT</div>
         </div>
         {/* Contact Form */}
         <div className="max-w-4xl mx-auto">

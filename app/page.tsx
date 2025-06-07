@@ -18,13 +18,13 @@ const ModelViewer = dynamic(() => import('@/components/model-viewer'), {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f5f8ff]">
+    <main className="min-h-screen bg-[#f5f8ff] overflow-x-hidden">
       <section id="top" className="relative flex flex-col min-h-screen justify-start items-center pt-12 pb-0 overflow-hidden">
         {/* ナビゲーションバー */}
         <Navbar />
         <div className="relative w-full max-w-7xl mx-auto mt-4 items-start justify-between px-6 z-10 flex flex-col md:flex-row">
           {/* 左側テキスト */}
-          <div className="flex-1 min-w-[320px] z-10">
+          <div className="flex-1 min-w-0 w-full z-10">
             <h1 className="text-4xl md:text-6xl font-bold text-[#2576e5] leading-tight mb-4">
               <span className="text-[#2576e5]">Polish the HORN you</span><br />
               <span className="text-blue-600">own,</span><br />
@@ -37,8 +37,8 @@ export default function Home() {
             </div>
           </div>
           {/* 3Dモデル */}
-          <div className="flex-1 min-w-[320px] flex justify-center items-center md:h-[80vh] mt-0 md:mt-0">
-            <div className="w-[210px] h-[255px] md:w-full md:h-full flex items-end md:items-center justify-center pointer-events-none">
+          <div className="flex-1 min-w-0 w-full flex justify-center items-center md:h-[80vh] mt-0 md:mt-0">
+            <div className="w-[90vw] max-w-[230px] h-[28vh] md:w-full md:h-full flex items-end md:items-center justify-center pointer-events-none">
               <ModelViewer />
             </div>
           </div>

@@ -62,7 +62,6 @@ body {
 }
 
 .hilowave-text {
-  font-size: clamp(6rem, 20vw, 16rem);
   font-weight: 800;
   line-height: 0.8;
   color: #3b82f6;
