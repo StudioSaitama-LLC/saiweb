@@ -45,7 +45,7 @@ export default function MessageSection() {
           <p className="text-[30px] md:text-2xl lg:text-4xl text-blue-500 mb-8">
             「それ、意味あるの？」って言われることに、どこか惹かれてしまう。
           </p>
-          <div className="text-[18px] sm:text-[20px] md:text-[24px] text-blue-500 leading-[1.8] sm:leading-[2.2] md:leading-[2.4] space-y-4">
+          <div className="text-[24px] sm:text-[20px] md:text-[24px] text-blue-500 leading-[1.8] sm:leading-[2.2] md:leading-[2.4] space-y-4">
             <p>
               効率とか、正解とか、そういうものを追い求める中で、<br />
               静かに失われていったコトがあると思っている。<br />
