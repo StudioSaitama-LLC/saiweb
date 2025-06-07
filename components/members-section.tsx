@@ -72,7 +72,7 @@ export default function MembersSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Members Title */}
         <div className="mb-16">
-          <div className="hilowave-text text-center lg:text-left">MEMBER</div>
+          <div className="hilowave-text text-center lg:text-left text-[84px] sm:text-[128px] md:text-[192px] lg:text-[256px]">MEMBER</div>
         </div>
 
         {/* Members Grid */}

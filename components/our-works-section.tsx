@@ -21,7 +21,7 @@ export default function OurWorksSection() {
       {/* WORKS Title */}
       <div className="hero-gradient py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-[256px] font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter">WORKS</div>
+          <div className="text-[84px] sm:text-[128px] md:text-[192px] lg:text-[256px] font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter">WORKS</div>
         </div>
       </div>
 
@@ -50,11 +50,11 @@ export default function OurWorksSection() {
                     <div className="space-y-4 sm:space-y-6 md:space-y-8">
                       <div className="space-y-2 sm:space-y-4 md:space-y-6">
                         <p className="text-gray-300 text-base sm:text-lg tracking-wider">OUR WORK</p>
-                        <h2 className="text-white font-bold leading-tight break-words" style={{ fontSize: '2.5rem', lineHeight: 1.1, whiteSpace: 'normal' }}>
-                          <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-[6.37rem] leading-tight">WAZAO-IPPON</span>
+                        <h2 className="text-white font-bold leading-tight break-words text-2xl sm:text-4xl md:text-6xl lg:text-[6.37rem]" style={{ lineHeight: 1.1, whiteSpace: 'normal' }}>
+                          <span className="block">WAZAO-IPPON</span>
                         </h2>
-                        <h3 className="text-white text-lg sm:text-xl md:text-2xl japanese-text">革新的なソリューションの実績</h3>
-                        <p className="text-gray-300 text-sm sm:text-base md:text-lg japanese-text leading-relaxed md:leading-relaxed">
+                        <h3 className="text-white text-base sm:text-lg md:text-xl lg:text-2xl japanese-text">革新的なソリューションの実績</h3>
+                        <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg japanese-text leading-relaxed md:leading-relaxed">
                           AI技術とクリエイティブが融合した、私たちの代表的なプロジェクトをご紹介<br />
                           します。各プロジェクトは独自の課題に対する革新的なアプローチを示してい<br />
                           ます。

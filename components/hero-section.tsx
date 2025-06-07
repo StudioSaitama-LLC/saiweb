@@ -4,11 +4,11 @@ export default function HeroSection() {
   return (
     <div className="hero-gradient min-h-screen relative overflow-hidden snap-start">
       <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 items-center min-h-[60vh]">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 order-1 lg:order-none w-full">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-blue-500">Discover the HORN you</span><br />
                 <span className="text-blue-600">own,</span><br />
                 <span className="text-blue-500">sharpen it,</span><br />
@@ -17,15 +17,15 @@ export default function HeroSection() {
             </div>
 
             <div className="space-y-4">
-              <div className="text-3xl md:text-4xl text-gray-800 font-medium">
+              <div className="text-2xl md:text-3xl text-gray-800 font-medium">
                 We're <span className="text-[#3B82F6]">SAI</span>.<br />
                 And so are you.
               </div>
             </div>
           </div>
 
-          {/* Right Content - 3D Model Placeholder */}
-          <div className="flex justify-center items-center">
+          {/* 3D Model - Responsive order */}
+          <div className="flex justify-center items-center mt-12 order-2 lg:order-none w-full">
             <div className="model-viewer-container">
               <div className="model-viewer-inner">
                 <div className="model-viewer-core"></div>
@@ -37,7 +37,7 @@ export default function HeroSection() {
 
         {/* HILOWAVE Text - Adjusted position */}
         <div className="mt-4 lg:mt-6">
-          <div className="hilowave-text text-center lg:text-left">HILOWAVE</div>
+          <div className="hilowave-text text-center lg:text-left text-[84px] sm:text-[128px] md:text-[192px] lg:text-[256px]">HILOWAVE</div>
         </div>
 
         {/* Bottom Indicator */}

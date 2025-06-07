@@ -268,9 +268,9 @@ export default function WorksCardsSection() {
         <section className="mt-32 w-full">
           <div className="max-w-7xl mx-auto px-6">
             {/* AIXタイトル */}
-            <div className="hilowave-text text-left mb-16">AIX</div>
+            <div className="hilowave-text text-left mb-16 text-[84px] sm:text-[128px] md:text-[192px] lg:text-[256px]">AIX</div>
             {/* AIX説明テキスト */}
-            <div className="max-w-5xl mb-12 text-blue-500 text-[36px] leading-[2] text-left font-bold japanese-text" style={{fontWeight: 700}}>
+            <div className="max-w-5xl mb-12 text-blue-500 text-[16px] sm:text-[24px] md:text-[36px] leading-[1.8] sm:leading-[2.2] md:leading-[2.4] text-left font-bold japanese-text" style={{fontWeight: 700}}>
               <p>AIの波が、やってきました。</p>
               <p>スモールチームの皆さん、またとないチャンスです。</p>
               <p>スタジオサイタマではこれまでの知見をベースに、</p>
