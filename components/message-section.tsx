@@ -45,7 +45,7 @@ export default function MessageSection() {
           <p className="text-[30px] md:text-2xl lg:text-4xl text-blue-500 mb-8">
             「それ、意味あるの？」って言われることに、どこか惹かれてしまう。
           </p>
-          <div className="text-[24px] sm:text-[20px] md:text-[24px] text-blue-500 leading-[1.8] sm:leading-[2.2] md:leading-[2.4] space-y-4">
+          <div className="text-[20px] sm:text-[20px] md:text-[24px] text-blue-500 leading-[1.8] sm:leading-[2.2] md:leading-[2.4] space-y-4 font-bold">
             <p>
               効率とか、正解とか、そういうものを追い求める中で、<br />
               静かに失われていったコトがあると思っている。<br />
@@ -70,7 +70,7 @@ export default function MessageSection() {
         {/* SPECIALITYセクション */}
         <div className="mt-32">
           <div className="font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter text-[84px] lg:text-[256px]">SPECIALITY</div>
-          <div className="text-[30px] sm:text-[24px] md:text-[36px] text-blue-500 mt-8 font-bold japanese-text">現場でブリコラージュし、領域を跨いでサイ適を描く</div>
+          <div className="text-[20px] sm:text-[24px] md:text-[36px] text-blue-500 mt-8 font-bold japanese-text">現場でブリコラージュし、領域を跨いでサイ適を描く</div>
 
           {/* 3枚のカード（バリュー） */}
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
