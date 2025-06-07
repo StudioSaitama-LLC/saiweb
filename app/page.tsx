@@ -9,6 +9,7 @@ import WorksCardsSection from "@/components/works-cards-section"
 import MembersSection from "@/components/members-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
+import { SpecialitySection } from "@/components/speciality-section"
 
 const ModelViewer = dynamic(() => import('@/components/model-viewer'), {
   ssr: false,
@@ -44,11 +45,12 @@ export default function Home() {
         </div>
         {/* 中央下段の大きなテキスト */}
         <div className="w-full max-w-7xl mx-auto px-6 flex justify-start pointer-events-none select-none z-20 mt-8">
-          <span className="font-inter font-extrabold text-left text-[#3b82f6] leading-[1] tracking-[-0.04em] text-[84px] lg:text-[256px]">STUDIO SAITAMA</span>
+          <span className="font-inter font-extrabold text-left text-[#3b82f6] leading-[1] tracking-[-0.04em] text-[clamp(40px,16vw,256px)]">STUDIO SAITAMA</span>
         </div>
       </section>
       <MessageSection />
       <ValuesSection />
+      <SpecialitySection />
       <OurWorksSection />
       <WorksCardsSection />
       <MembersSection />

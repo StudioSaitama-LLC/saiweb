@@ -6,6 +6,10 @@ declare namespace JSX {
       'auto-rotate'?: boolean;
       'camera-controls'?: boolean;
       'shadow-intensity'?: string;
+      'camera-orbit'?: string;
+      'min-camera-orbit'?: string;
+      'max-camera-orbit'?: string;
+      'rotation-per-second'?: string;
     }, HTMLElement>;
   }
 } 
