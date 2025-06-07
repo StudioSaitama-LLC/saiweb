@@ -25,13 +25,13 @@ export default function Home() {
         <div className="relative w-full max-w-7xl mx-auto mt-4 items-start justify-between px-6 z-10 flex flex-col md:flex-row">
           {/* 左側テキスト */}
           <div className="flex-1 min-w-0 w-full z-10">
-            <h1 className="text-4xl md:text-6xl font-bold text-[#2576e5] leading-tight mb-4">
+            <h1 className="text-3xl md:text-6xl font-bold text-[#2576e5] leading-tight mb-4 mt-20 sm:mt-24 md:mt-0">
               <span className="text-[#2576e5]">Polish the HORN you</span><br />
               <span className="text-blue-600">own,</span><br />
               <span className="text-[#2576e5]">sharpen it,</span><br />
               <span className="text-blue-600">sharpen, sharpen it.</span>
             </h1>
-            <div className="text-2xl text-black mb-4">
+            <div className="text-[18px] md:text-2xl text-black mb-4">
               We're <span className="text-[#3B82F6]">SAI</span>.<br />
               And so are you.
             </div>

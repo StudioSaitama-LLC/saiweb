@@ -38,8 +38,8 @@ export function InfiniteScroll() {
             animation: scroll 5s linear infinite;
           }
           .mobile-tight-space {
-            margin-left: 5rem;
-            margin-right: 5rem;
+            margin-left: 10rem;
+            margin-right: 10rem;
           }
         }
       `}</style>
