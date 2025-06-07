@@ -19,14 +19,6 @@ export default function ContactSection() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    // Reset form
-    setFormData({ email: "", title: "", content: "" })
-  }
-
   return (
     <div id="contact" className="hero-gradient py-24 snap-start">
       <div className="max-w-7xl mx-auto px-6">
@@ -37,7 +29,7 @@ export default function ContactSection() {
         {/* Contact Form */}
         <div className="max-w-4xl mx-auto">
           <div className="nav-pill rounded-3xl p-8 md:p-12">
-            <form onSubmit={handleSubmit} className="space-y-8">
+            <form action="https://formspree.io/f/xgvyoboy" method="POST" className="space-y-8">
               {/* Email Field */}
               <div>
                 <label htmlFor="email" className="block text-lg font-medium text-blue-600 mb-3 japanese-text">
@@ -47,8 +39,6 @@ export default function ContactSection() {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white bg-opacity-80"
                   placeholder="your@email.com"
@@ -64,8 +54,6 @@ export default function ContactSection() {
                   type="text"
                   id="title"
                   name="title"
-                  value={formData.title}
-                  onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white bg-opacity-80"
                   placeholder="お問い合わせの件名を入力してください"
@@ -75,29 +63,20 @@ export default function ContactSection() {
               {/* Content Field */}
               <div>
                 <label htmlFor="content" className="block text-lg font-medium text-blue-600 mb-3 japanese-text">
-                  内容
+                  お問い合わせ内容
                 </label>
                 <textarea
                   id="content"
                   name="content"
-                  value={formData.content}
-                  onChange={handleChange}
                   required
-                  rows={6}
-                  className="w-full px-4 py-3 rounded-lg border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white bg-opacity-80 resize-vertical"
-                  placeholder="お問い合わせ内容を詳しくご記入ください"
+                  className="w-full px-4 py-3 rounded-lg border border-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white bg-opacity-80 min-h-[120px]"
+                  placeholder="お問い合わせ内容を入力してください"
                 />
               </div>
 
-              {/* Submit Button */}
-              <div className="text-center">
-                <button
-                  type="submit"
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-12 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105"
-                >
-                  送信
-                </button>
-              </div>
+              <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white text-lg font-bold py-4 rounded-full transition-colors duration-300">
+                送信
+              </button>
             </form>
           </div>
         </div>
