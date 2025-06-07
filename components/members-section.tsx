@@ -18,7 +18,7 @@ export default function MembersSection() {
       position: "代表社員\nTECHNICAL DIRECTOR",
       description:
         "慶應義塾大学卒業後、株式会社NTT データ入社。NTT データにて大規模システム開発を経験後、理化学研究所発VRベンチャーハコスコにて開発部長/プロダクトマネージャとしてXR関連新規技術、事業開発に従事。好きな釣りは渓流トラウト。",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/images/chiaki.png",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export default function MembersSection() {
       position: "業務執行社員\nBRANDING DIRECTOR",
       description:
         "慶應義塾大学卒業後、株式会社博報堂入社。ブランド戦略部門にてアウターブランディングをはじめ、組織のインターナルブランディングやマーケティングコミュニケーションなど広範に従事。好きな釣りはレイクトラウト・マルタウグイ・サツキマスなど5月の釣り。",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/images/tomhirosoeno.png",
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export default function MembersSection() {
       position: "業務執行社員\nSALES DIRECTOR",
       description:
         "慶應義塾大学卒業後、みずほ銀行入行。国内大手グルメサービスを運営するスタートアップ企業Rettyにて営業・事業企画としてIPOを経験。その後、日本ロレアル勤務を経て、Google Japan にてStrategy Planning、Sales Opsとして日本法人の戦略策定、実行を担う。好きな釣りはサビキ釣り。",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/images/takagi.png",
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ export default function MembersSection() {
       position: "BizDev",
       description:
         "慶應義塾大学卒業後、大手外資系IT企業に入社。ITコンサルタントとして業務改善、システム導入のコンサルティングの提案からデリバリーまでを推進。特に人事領域のコンサルティングを強みとし、タレントマネジメントや、人材組織管理・給与・勤怠などの基幹業務システムのプロジェクトに従事。スタートアップのM&A支援・PMI なども行っている。好きな釣りは小鮒釣り。",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/images/ito.png",
     },
     {
       id: 5,
@@ -54,7 +54,7 @@ export default function MembersSection() {
       position: "CREATIVE PRODUCER",
       description:
         "2016年 オーストラリアから帰国し、株式会社カラス入社。2020年にCEKAI に参加。クリエイティブ・アートディレクション、プランニング・コピーライティングを領域に、東京五輪やグローバルブランドを多数担当した。2025年から拠点をNYに移す。好きな釣りはエギング。",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/images/mura.png",
     },
     {
       id: 6,
@@ -63,7 +63,7 @@ export default function MembersSection() {
       position: "サイの仲間達",
       description:
         "プロジェクトに合わせてチームを拡張し、必要に応じてパートナーと連携します。",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/images/friends.png",
     },
   ]
 
@@ -84,8 +84,16 @@ export default function MembersSection() {
             >
               {/* Profile Image */}
               <div className="mb-6 flex justify-center">
-                <div className="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center">
-                  <User size={48} className="text-gray-400" />
+                <div className="w-32 h-32 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+                  {member.image ? (
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="object-cover w-full h-full"
+                    />
+                  ) : (
+                    <User size={48} className="text-gray-400" />
+                  )}
                 </div>
               </div>
 
