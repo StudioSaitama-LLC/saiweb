@@ -22,23 +22,23 @@ export default function Home() {
       <section id="top" className="relative flex flex-col min-h-screen justify-start items-center pt-12 pb-0 overflow-hidden">
         {/* ナビゲーションバー */}
         <Navbar />
-        <div className="flex flex-row w-full max-w-7xl mx-auto mt-4 items-center justify-between px-6 z-10">
+        <div className="relative w-full max-w-7xl mx-auto mt-4 items-start justify-between px-6 z-10 flex flex-col md:flex-row">
           {/* 左側テキスト */}
-          <div className="flex-1 min-w-[320px]">
-            <h1 className="text-5xl md:text-6xl font-bold text-[#2576e5] leading-tight mb-8">
+          <div className="flex-1 min-w-[320px] z-10">
+            <h1 className="text-4xl md:text-6xl font-bold text-[#2576e5] leading-tight mb-4">
               <span className="text-[#2576e5]">Polish the HORN you</span><br />
               <span className="text-blue-600">own,</span><br />
               <span className="text-[#2576e5]">sharpen it,</span><br />
               <span className="text-blue-600">sharpen, sharpen it.</span>
             </h1>
-            <div className="text-2xl text-black mb-32">
+            <div className="text-2xl text-black mb-4">
               We're <span className="text-[#3B82F6]">SAI</span>.<br />
               And so are you.
             </div>
           </div>
-          {/* 右側の3Dモデル（画面いっぱい） */}
-          <div className="flex-1 flex justify-center items-center min-w-[320px] h-[60vh] md:h-[80vh] relative">
-            <div className="absolute inset-0 flex items-center justify-center">
+          {/* 3Dモデル */}
+          <div className="flex-1 min-w-[320px] flex justify-center items-center md:h-[80vh] mt-0 md:mt-0">
+            <div className="w-[210px] h-[255px] md:w-full md:h-full flex items-end md:items-center justify-center pointer-events-none">
               <ModelViewer />
             </div>
           </div>
