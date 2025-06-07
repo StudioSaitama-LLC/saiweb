@@ -11,7 +11,7 @@ export default function OurWorksSection() {
       title: "ツカノマノスゴイサウナ",
       client: "渋谷屋上のポップアップサウナイベント",
       description: "「渋谷にサイタマを創る」とのコンセプトで開催した期間限定サウナイベント。取り壊しが決まっていた渋谷区神泉のビル屋上で週末限定4ヶ月間実施。700名以上を動員した。ツカノマノフードコート連動企画。",
-      image: "/images/ツカノマノスゴイサウナ.JPG",
+      image: "/images/tsukanoma-no-sugoi-sauna.jpg",
       link: "https://sauna-ikitai.com/saunas/7004"
     }
   ]
