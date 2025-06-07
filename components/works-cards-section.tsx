@@ -24,109 +24,99 @@ export default function WorksCardsSection() {
   const works: WorkItem[] = [
     {
       id: 1,
-      title: "Product Design",
-      subtitle: "革新的なプロダクトデザイン",
-      category: "プロダクトデザイン",
-      client: "テクノロジー企業A社",
-      duration: "6ヶ月",
-      team: "プロダクトデザイナー3名、エンジニア2名",
-      challenge:
-        "既存のUIが複雑で、ユーザビリティに課題がありました。特に新規ユーザーの離脱率が高く、直感的な操作性の向上が急務でした。",
-      approach: [
-        "ユーザーインタビューとペルソナ設計",
-        "情報アーキテクチャの再構築",
-        "プロトタイプによる検証とイテレーション",
-        "デザインシステムの構築",
-      ],
-      image: "/placeholder.svg?height=400&width=600",
+      title: "ファッションメディア「W.W.D」経営戦略立案支援",
+      subtitle: "AI導入を軸に、経営資源の最適化および営業支援。従来の意思決定から、データドリブンな経営判断への転換を支援し、組織改変や営業プロセスの最適化に伴走。",
+      category: "経営戦略・営業支援・AI導入支援",
+      client: "INFAS publications",
+      duration: "",
+      team: "",
+      challenge: "",
+      approach: [],
+      image: ""
     },
     {
       id: 2,
-      title: "Branding",
-      subtitle: "ブランドアイデンティティ構築",
-      category: "ブランディング",
-      client: "フィンテック スタートアップ",
-      duration: "4ヶ月",
-      team: "ブランドデザイナー2名、コピーライター1名",
-      challenge:
-        "新規事業立ち上げに伴い、ゼロからブランドアイデンティティを構築する必要がありました。ターゲット層への訴求力と差別化が重要な課題でした。",
-      approach: [
-        "競合分析とマーケットリサーチ",
-        "ブランドコンセプトの策定",
-        "ビジュアルアイデンティティの開発",
-        "ブランドガイドラインの制作",
-      ],
-      image: "/placeholder.svg?height=400&width=600",
+      title: "XRスタートアップ M&A｜PMI 支援",
+      subtitle: "ハコスコ社のM&Aに伴う組織統合プロジェクトを支援。企業文化の融合、業務プロセスの最適化、人材マネジメントの再構築を通じて、シナジー効果の最大化を支援した。",
+      category: "M&A・PMI",
+      client: "ハコスコ",
+      duration: "",
+      team: "",
+      challenge: "",
+      approach: [],
+      image: ""
     },
     {
       id: 3,
-      title: "AI Development",
-      subtitle: "AIを活用したソリューション開発",
-      category: "AI開発",
-      client: "製造業B社",
-      duration: "8ヶ月",
-      team: "AIエンジニア3名、データサイエンティスト2名",
-      challenge:
-        "製造ラインの品質管理において、人的ミスによる不良品の発生が課題でした。AIによる自動検査システムの導入が求められていました。",
-      approach: [
-        "データ収集と前処理",
-        "機械学習モデルの開発",
-        "リアルタイム検査システムの構築",
-        "継続的な学習機能の実装",
-      ],
-      image: "/placeholder.svg?height=400&width=600",
+      title: "出版社新規メディア立ち上げ支援",
+      subtitle: "ルアーマガジンなどで知られる内外出版社の親webメディアの立ち上げ支援およびコンテンツ開発を支援。迅速なPoCを実現した。",
+      category: "新規事業・PoC",
+      client: "内外出版社",
+      duration: "",
+      team: "",
+      challenge: "",
+      approach: [],
+      image: ""
     },
     {
       id: 4,
-      title: "Web Development",
-      subtitle: "次世代Webアプリケーション",
-      category: "Web開発",
-      client: "Eコマース企業C社",
-      duration: "5ヶ月",
-      team: "フロントエンドエンジニア2名、バックエンドエンジニア2名",
-      challenge:
-        "既存のECサイトのパフォーマンスが低く、モバイル対応も不十分でした。ユーザー体験の向上とコンバージョン率の改善が必要でした。",
-      approach: [
-        "パフォーマンス分析と最適化",
-        "レスポンシブデザインの実装",
-        "PWA化による高速化",
-        "A/Bテストによる継続改善",
-      ],
-      image: "/placeholder.svg?height=400&width=600",
+      title: "大型複合施設開業期PR支援",
+      subtitle: "大宮再開発の象徴として202年にオープンした大宮門街の開業期PR戦略策定~実装を支援。その後も施設内そば屋「SHABA」開業支援や、アートスペース設計など継続的に支援を実施",
+      category: "PR・施設運営",
+      client: "中央デパート",
+      duration: "",
+      team: "",
+      challenge: "",
+      approach: [],
+      image: ""
     },
     {
       id: 5,
-      title: "Mobile App",
-      subtitle: "革新的なモバイルアプリ",
-      category: "モバイルアプリ",
-      client: "ヘルスケア企業D社",
-      duration: "7ヶ月",
-      team: "モバイルエンジニア3名、UIデザイナー2名",
-      challenge: "健康管理アプリの開発において、継続的な利用を促すUXデザインと、正確なデータ計測が課題でした。",
-      approach: [
-        "ユーザージャーニーマップの作成",
-        "ゲーミフィケーション要素の導入",
-        "センサーデータの高精度化",
-        "パーソナライゼーション機能の実装",
-      ],
-      image: "/placeholder.svg?height=400&width=600",
+      title: "AI基盤開発事業者向け国家PJにおけるコミュニティ設計支援",
+      subtitle: "経済産業省が実施する国内生成AI基盤開発事業者向け事業「GENIAC」における開発事業者コミュニティの運営支援を実施。社会実装に向けたイベント設計などを並走した。",
+      category: "コミュニティ設計・イベント運営",
+      client: "BCG",
+      duration: "",
+      team: "",
+      challenge: "",
+      approach: [],
+      image: ""
     },
     {
       id: 6,
-      title: "Data Analytics",
-      subtitle: "データドリブンな意思決定支援",
-      category: "データ分析",
-      client: "小売業E社",
-      duration: "6ヶ月",
-      team: "データアナリスト2名、ビジュアライゼーションデザイナー1名",
-      challenge: "膨大な販売データを活用できておらず、在庫管理や需要予測の精度向上が求められていました。",
-      approach: [
-        "データウェアハウスの構築",
-        "予測モデルの開発",
-        "ダッシュボードの設計・開発",
-        "レポート自動化システムの構築",
-      ],
-      image: "/placeholder.svg?height=400&width=600",
+      title: "ローカル運輸カンパニーの経営支援およびブランディング支援",
+      subtitle: "観光バス・運輸・プラント工事の3部門からなるローカルカンパニーの経営戦略立案を支援。新規事業のPoCや新入社員教育、クリエイティブの制作などを支援した。",
+      category: "人材開発・ブランディング",
+      client: "東栄運輸",
+      duration: "",
+      team: "",
+      challenge: "",
+      approach: [],
+      image: ""
+    },
+    {
+      id: 7,
+      title: "ベビーカー国内上市時のマーケティング戦略立案支援",
+      subtitle: "シンガポールのベビーカー「hamilton」の国内上市に伴う市場リサーチから上市時のブランド戦略策定を支援",
+      category: "マーケティング・ブランディング",
+      client: "hamilton",
+      duration: "",
+      team: "",
+      challenge: "",
+      approach: [],
+      image: ""
+    },
+    {
+      id: 8,
+      title: "toB向けEC構築支援",
+      subtitle: "老舗お弁当箱メーカーのEC構築を支援。多岐にわたる商品バリエーションのインテグレーションから、EC構築までを支援した",
+      category: "EC構築・WEBマーケティング",
+      client: "折峰",
+      duration: "",
+      team: "",
+      challenge: "",
+      approach: [],
+      image: ""
     },
   ]
 
@@ -166,23 +156,27 @@ export default function WorksCardsSection() {
             {works.map((work) => (
               <div
                 key={work.id}
-                className="nav-pill rounded-2xl p-10 min-w-[420px] max-w-[480px] h-[420px] cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl group flex flex-col"
-                onClick={() => openModal(work)}
+                className="rounded-2xl p-8 min-w-[340px] max-w-[380px] h-[260px] bg-white/80 shadow-md flex flex-col justify-between border border-blue-100"
               >
-                {/* Image Placeholder */}
-                <div className="bg-gray-200 rounded-lg h-64 mb-6 flex items-center justify-center">
-                  <ImageIcon size={64} className="text-gray-400" />
+                {/* カテゴリカプセル */}
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {work.category.split('・').map((cat, i) => (
+                    <span key={i} className="text-xs px-3 py-1 bg-blue-100 text-blue-600 rounded-full font-semibold">
+                      {cat}
+                    </span>
+                  ))}
                 </div>
-
-                {/* Content */}
-                <div className="space-y-4 flex-1">
-                  <h3 className="text-3xl font-bold text-blue-600">{work.title}</h3>
-                  <p className="text-blue-500 japanese-text text-lg">{work.subtitle}</p>
-                  <button className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 flex items-center space-x-2 mt-4">
-                    <span>Read</span>
-                    <span>→</span>
-                  </button>
+                {/* テキスト中央揃え用ラッパー */}
+                <div className="flex-1 flex flex-col justify-center">
+                  {/* タイトル */}
+                  <h3 className="text-lg font-bold text-blue-700 mb-2 break-words whitespace-pre-line min-h-[48px] flex items-center">{work.title}</h3>
+                  {/* 区切り線 */}
+                  <div className="w-12 h-px bg-blue-100 my-2 mx-0" />
+                  {/* 本文 */}
+                  <p className="text-xs text-blue-500 mb-2 break-words whitespace-pre-line min-h-[60px] flex items-center">{work.subtitle}</p>
                 </div>
+                {/* クライアント名 */}
+                <p className="text-[10px] text-blue-400 mt-auto">{work.client}</p>
               </div>
             ))}
           </div>
