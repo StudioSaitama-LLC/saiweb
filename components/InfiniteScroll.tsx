@@ -1,0 +1,40 @@
+import * as React from "react"
+import { useIsMobile } from "@/hooks/use-mobile"
+
+const items = [
+  { ja: "サイ", en: "Rhino" },
+  { ja: "再", en: "Rebirth" },
+  { ja: "差異", en: "Difference" },
+  { ja: "彩", en: "Enrich" },
+  { ja: "祭", en: "Frenzy" },
+  { ja: "宰", en: "Ownership" },
+  { ja: "砕", en: "Breakthrough" },
+  { ja: "SAI", en: "S＋AI" },
+  { ja: "細", en: "Detail" },
+  { ja: "才", en: "Talent" },
+  { ja: "最", en: "Top" },
+]
+
+export function InfiniteScroll() {
+  const isMobile = useIsMobile()
+
+  return (
+    <div className="relative w-full overflow-hidden bg-transparent py-12">
+      <div className="flex animate-scroll items-center whitespace-nowrap">
+        {[...items, ...items, ...items].map((item, index) => (
+          <div
+            key={index}
+            className="mx-20 flex flex-col items-center"
+          >
+            <span className={`${isMobile ? "text-4xl" : "text-[120px]"} font-bold text-[#3B82F6]`}>
+              {item.ja}
+            </span>
+            <span className={`${isMobile ? "text-3xl" : "text-[24px]"} mt-1 text-[#3B82F6] font-bold`}>
+              {item.en}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+} 

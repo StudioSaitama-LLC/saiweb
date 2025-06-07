@@ -86,3 +86,43 @@ body {
     height: 50px;
   }
 }
+
+.neumorph-card {
+  background: #f0f5ff;
+  border-radius: 2rem;
+  box-shadow:
+    -6px -6px 16px #f7fbff,
+    8px 8px 24px #dbe7f3;
+  transition: box-shadow 0.2s;
+}
+.neumorph-card:active,
+.neumorph-card:hover {
+  box-shadow:
+    -2px -2px 8px #f7fbff,
+    2px 2px 12px #dbe7f3;
+}
+
+.neumorph-inset {
+  background: #f0f5ff;
+  border-radius: 1.5rem;
+  box-shadow:
+    inset 4px 4px 16px #dbe7f3,
+    inset -4px -4px 12px #f7fbff;
+  padding: 1.5rem 1.5rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.666%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 2.7s linear infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-play-state: running;
+}

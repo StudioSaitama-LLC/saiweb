@@ -279,9 +279,11 @@ export default function WorksCardsSection() {
             {/* 横並びのすりガラスカード */}
             <div className="flex flex-row gap-8 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
               {[1,2,3].map((i) => (
-                <div key={i} className="backdrop-blur-lg bg-white/30 border border-white/40 rounded-2xl shadow-lg min-w-[380px] max-w-[420px] h-[320px] p-8 flex flex-col justify-center items-start">
+                <div key={i} className="neumorph-card min-w-[320px] max-w-[380px] h-[260px] p-8 flex flex-col justify-center items-start">
                   <h3 className="text-2xl font-bold text-blue-600 mb-4">AIX Card {i}</h3>
-                  <p className="text-blue-500 text-lg">これはAIXセクションのダミーテキストです。AIと体験（Experience）を融合した新しい価値を提案します。</p>
+                  <div className="neumorph-inset w-full">
+                    <p className="text-blue-500 text-lg">これはAIXセクションのダミーテキストです。AIと体験（Experience）を融合した新しい価値を提案します。</p>
+                  </div>
                 </div>
               ))}
             </div>

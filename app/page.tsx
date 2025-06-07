@@ -31,8 +31,8 @@ export default function Home() {
               <span className="text-blue-600">sharpen, sharpen it.</span>
             </h1>
             <div className="text-2xl text-black mb-32">
-              Are you ready?<br />
-              The <span className="text-blue-600">SAI</span> has arrived.
+              We're <span className="text-[#3B82F6]">SAI</span>.<br />
+              And so are you.
             </div>
           </div>
           {/* 右側の3Dモデル（画面いっぱい） */}

@@ -18,8 +18,8 @@ export default function HeroSection() {
 
             <div className="space-y-4">
               <div className="text-3xl md:text-4xl text-gray-800 font-medium">
-                Are you ready?<br />
-                The <span className="text-blue-600">SAI</span> has arrived.
+                We're <span className="text-[#3B82F6]">SAI</span>.<br />
+                And so are you.
               </div>
             </div>
           </div>
