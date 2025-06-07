@@ -24,8 +24,8 @@ export default function Home() {
         <Navbar />
         <div className="relative w-full max-w-7xl mx-auto mt-4 items-start justify-between px-6 z-10 flex flex-col md:flex-row">
           {/* 左側テキスト */}
-          <div className="flex-1 min-w-0 w-full z-10">
-            <h1 className="text-3xl md:text-6xl font-bold text-[#2576e5] leading-tight mb-4 mt-20 sm:mt-24 md:mt-0">
+          <div className="flex-1 min-w-0 w-full z-10 flex flex-col justify-center">
+            <h1 className="text-[35px] md:text-6xl font-bold text-[#2576e5] leading-tight mb-4 mt-10 md:mt-[120px]">
               <span className="text-[#2576e5]">Polish the HORN you</span><br />
               <span className="text-blue-600">own,</span><br />
               <span className="text-[#2576e5]">sharpen it,</span><br />
@@ -37,8 +37,8 @@ export default function Home() {
             </div>
           </div>
           {/* 3Dモデル */}
-          <div className="flex-1 min-w-0 w-full flex justify-center items-center md:h-[80vh] mt-0 md:mt-0">
-            <div className="w-[90vw] max-w-[230px] h-[28vh] md:w-full md:h-full flex items-end md:items-center justify-center pointer-events-none">
+          <div className="flex-1 min-w-0 w-full flex justify-center md:justify-end items-center md:h-[80vh] mt-0 md:mt-0">
+            <div className="w-[210px] h-[255px] md:w-[600px] md:h-[700px] flex items-end md:items-center justify-center md:justify-end pointer-events-none">
               <ModelViewer />
             </div>
           </div>

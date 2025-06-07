@@ -13,56 +13,56 @@ export default function MembersSection() {
   const members: Member[] = [
     {
       id: 1,
-      name: "山田太郎",
-      nameEn: "Taro Yamada",
-      position: "CEO / Founder",
+      name: "CHIAKI KATO",
+      nameEn: "",
+      position: "代表社員\nTECHNICAL DIRECTOR",
       description:
-        "AI技術とビジネス戦略の専門家。10年以上のスタートアップ経験を持ち、テクノロジーで社会課題を解決することに情熱を注いでいます。",
+        "慶應義塾大学卒業後、株式会社NTT データ入社。NTT データにて大規模システム開発を経験後、理化学研究所発VRベンチャーハコスコにて開発部長/プロダクトマネージャとしてXR関連新規技術、事業開発に従事。好きな釣りは渓流トラウト。",
       image: "/placeholder.svg?height=200&width=200",
     },
     {
       id: 2,
-      name: "佐藤花子",
-      nameEn: "Hanako Sato",
-      position: "Creative Director",
+      name: "TOMOHIRO SOENO",
+      nameEn: "",
+      position: "業務執行社員\nBRANDING DIRECTOR",
       description:
-        "ブランディングとデザインのエキスパート。国内外の大手企業のクリエイティブディレクションを手がけ、数々の賞を受賞しています。",
+        "慶應義塾大学卒業後、株式会社博報堂入社。ブランド戦略部門にてアウターブランディングをはじめ、組織のインターナルブランディングやマーケティングコミュニケーションなど広範に従事。好きな釣りはレイクトラウト・マルタウグイ・サツキマスなど5月の釣り。",
       image: "/placeholder.svg?height=200&width=200",
     },
     {
       id: 3,
-      name: "鈴木一郎",
-      nameEn: "Ichiro Suzuki",
-      position: "AI Engineer",
+      name: "William Takagi",
+      nameEn: "",
+      position: "業務執行社員\nSALES DIRECTOR",
       description:
-        "機械学習とデータサイエンスの専門家。大学院でAI研究に従事し、複数の論文を発表。実用的なAIソリューションの開発に取り組んでいます。",
+        "慶應義塾大学卒業後、みずほ銀行入行。国内大手グルメサービスを運営するスタートアップ企業Rettyにて営業・事業企画としてIPOを経験。その後、日本ロレアル勤務を経て、Google Japan にてStrategy Planning、Sales Opsとして日本法人の戦略策定、実行を担う。好きな釣りはサビキ釣り。",
       image: "/placeholder.svg?height=200&width=200",
     },
     {
       id: 4,
-      name: "田中美咲",
-      nameEn: "Misaki Tanaka",
-      position: "UX Designer",
+      name: "TAKAHIRO ITO",
+      nameEn: "",
+      position: "BizDev",
       description:
-        "ユーザー体験デザインの専門家。人間中心設計のアプローチで、使いやすく美しいインターフェースを創造しています。",
+        "慶應義塾大学卒業後、大手外資系IT企業に入社。ITコンサルタントとして業務改善、システム導入のコンサルティングの提案からデリバリーまでを推進。特に人事領域のコンサルティングを強みとし、タレントマネジメントや、人材組織管理・給与・勤怠などの基幹業務システムのプロジェクトに従事。スタートアップのM&A支援・PMI なども行っている。好きな釣りは小鮒釣り。",
       image: "/placeholder.svg?height=200&width=200",
     },
     {
       id: 5,
-      name: "高橋健太",
-      nameEn: "Kenta Takahashi",
-      position: "Full Stack Developer",
+      name: "MASANARI MURAMOTO",
+      nameEn: "",
+      position: "CREATIVE PRODUCER",
       description:
-        "フロントエンドからバックエンドまで幅広い技術領域をカバー。最新技術を活用した高品質なWebアプリケーション開発を得意としています。",
+        "2016年 オーストラリアから帰国し、株式会社カラス入社。2020年にCEKAI に参加。クリエイティブ・アートディレクション、プランニング・コピーライティングを領域に、東京五輪やグローバルブランドを多数担当した。2025年から拠点をNYに移す。好きな釣りはエギング。",
       image: "/placeholder.svg?height=200&width=200",
     },
     {
       id: 6,
-      name: "中村麻衣",
-      nameEn: "Mai Nakamura",
-      position: "Marketing Strategist",
+      name: "more friends",
+      nameEn: "",
+      position: "サイの仲間達",
       description:
-        "デジタルマーケティングとブランド戦略の専門家。データドリブンなアプローチで効果的なマーケティング施策を企画・実行しています。",
+        "プロジェクトに合わせてチームを拡張し、必要に応じてパートナーと連携します。",
       image: "/placeholder.svg?height=200&width=200",
     },
   ]
@@ -91,9 +91,9 @@ export default function MembersSection() {
 
               {/* Member Info */}
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-blue-600 japanese-text">{member.name}</h3>
-                <p className="text-lg text-blue-500 font-medium">{member.position}</p>
-                <p className="text-blue-500 japanese-text leading-relaxed text-sm">{member.description}</p>
+                <h3 className="text-2xl font-medium text-[#2563EB] japanese-text">{member.name}</h3>
+                <p className="text-[15px] text-neutral-800 font-normal whitespace-pre-line">{member.position}</p>
+                <p className="text-[#2563EB] japanese-text leading-relaxed text-sm font-normal">{member.description}</p>
               </div>
             </div>
           ))}
