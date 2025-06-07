@@ -2,17 +2,17 @@ import * as React from "react"
 import { useIsMobile } from "@/hooks/use-mobile"
 
 const items = [
-  { ja: "サイ", en: "Rhino" },
+  { ja: "🦏", en: "Rhino" },
   { ja: "再", en: "Rebirth" },
   { ja: "差異", en: "Difference" },
   { ja: "彩", en: "Enrich" },
   { ja: "祭", en: "Frenzy" },
   { ja: "宰", en: "Ownership" },
   { ja: "砕", en: "Breakthrough" },
-  { ja: "SAI", en: "S＋AI" },
   { ja: "細", en: "Detail" },
   { ja: "才", en: "Talent" },
   { ja: "最", en: "Top" },
+  { ja: "🦏", en: "Rhino" },
 ]
 
 export function InfiniteScroll() {
