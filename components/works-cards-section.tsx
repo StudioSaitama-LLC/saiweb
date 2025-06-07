@@ -270,11 +270,12 @@ export default function WorksCardsSection() {
             {/* AIXタイトル */}
             <div className="hilowave-text text-left mb-16">AIX</div>
             {/* AIX説明テキスト */}
-            <div className="max-w-3xl mb-12 text-blue-500 text-[36px] leading-[2] text-left font-bold japanese-text" style={{fontWeight: 700}}>
-              <p>AIと人間の体験が融合する新しい時代へ。</p>
-              <p>私たちは、テクノロジーの力で日常に新しい価値を生み出します。</p>
-              <p>直感的で心地よい体験を、すべての人に。</p>
-              <p>未来のAIXが、あなたの生活をもっと豊かにします。</p>
+            <div className="max-w-5xl mb-12 text-blue-500 text-[36px] leading-[2] text-left font-bold japanese-text" style={{fontWeight: 700}}>
+              <p>AIの波が、やってきました。</p>
+              <p>スモールチームの皆さん、またとないチャンスです。</p>
+              <p>スタジオサイタマではこれまでの知見をベースに、</p>
+              <p>AIによる業務の刷新（AIX）に取り組むことに決めました。</p>
+              <p>Smallチームの突破口AI=SAI を始めましょう。</p>
             </div>
             {/* 横並びのすりガラスカード */}
             <div className="flex flex-row gap-8 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-blue-200 scrollbar-track-transparent">
