@@ -21,7 +21,7 @@ export default function OurWorksSection() {
       {/* WORKS Title */}
       <div className="hero-gradient py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-[84px] sm:text-[128px] md:text-[192px] lg:text-[256px] font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter">WORKS</div>
+          <div className="font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter text-[clamp(40px,16vw,84px)]">WORKS</div>
         </div>
       </div>
 

@@ -268,50 +268,20 @@ export default function WorksCardsSection() {
         <section className="mt-32 w-full">
           <div className="max-w-7xl mx-auto px-6">
             {/* AIXタイトル */}
-            <div className="hilowave-text text-left mb-16 text-[84px] sm:text-[128px] md:text-[192px] lg:text-[256px]">AIX</div>
+            <div className="hilowave-text text-left mb-16 text-[clamp(40px,16vw,84px)]">AIX</div>
             {/* AIX説明テキスト */}
-            <div className="max-w-5xl mb-12 text-blue-500 text-[16px] sm:text-[24px] md:text-[36px] leading-[1.8] sm:leading-[2.2] md:leading-[2.4] text-left font-bold japanese-text" style={{fontWeight: 700}}>
+            <div className="max-w-5xl mb-12 text-blue-500 text-[30px] sm:text-[24px] md:text-[36px] leading-[1.8] sm:leading-[2.2] md:leading-[2.4] text-left font-bold japanese-text" style={{fontWeight: 700}}>
               <p>AIの波が、やってきました。</p>
               <p>スモールチームの皆さん、またとないチャンスです。</p>
               <p>スタジオサイタマではこれまでの知見をベースに、</p>
-              <p>AIによる業務の刷新（AIX）に取り組むことに決めました。</p>
-              <p>Smallチームの突破口AI=SAI を始めましょう。</p>
+              <p>AIによる業務刷新（AIX）に全てを捧げることに決めました。</p>
+              <p>Smallチームの突破口AI=SAI を、共に始めましょう。</p>
             </div>
-            {/* 横並びのすりガラスカード */}
-            <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* CHOICE: ALTERNATIVE */}
-              <div className="rounded-2xl p-10 bg-[#2563eb] text-white flex flex-col h-full shadow-xl relative">
-                <span className="absolute -top-5 left-6 bg-white text-[#2563eb] font-extrabold text-lg px-6 py-2 rounded-full shadow-md border-2 border-[#2563eb] select-none" style={{letterSpacing: '0.08em'}}>CHOICE</span>
-                <h3 className="font-extrabold text-3xl mb-4 tracking-tight text-white mt-4">ALTERNATIVE</h3>
-                <div className="text-lg font-semibold mb-2 mt-2 text-white">オルタナティブを選ぶ、という選択</div>
-                <div className="border-t-2 border-white/40 my-3 w-12" />
-                <p className="whitespace-pre-line text-base leading-relaxed text-white">
-                  主流に流されず、あえて傍流に立つ。
-                  常識や枠組みに縛られずに選ぶことで、新しい価値と可能性を拓く。
-                </p>
-              </div>
-              {/* TRUST: SMALL TEAMS */}
-              <div className="rounded-2xl p-10 bg-[#2563eb] text-white flex flex-col h-full shadow-xl relative">
-                <span className="absolute -top-5 left-6 bg-white text-[#2563eb] font-extrabold text-lg px-6 py-2 rounded-full shadow-md border-2 border-[#2563eb] select-none" style={{letterSpacing: '0.08em'}}>TRUST</span>
-                <h3 className="font-extrabold text-3xl mb-4 tracking-tight text-white mt-4">SMALL TEAMS</h3>
-                <div className="text-lg font-semibold mb-2 mt-2 text-white">小さなチームだからこそ動かせる</div>
-                <div className="border-t-2 border-white/40 my-3 w-12" />
-                <p className="whitespace-pre-line text-base leading-relaxed text-white">
-                  中小企業や小規模チームの素早い意思決定、しなやかな挑戦力。
-                  その特性こそが時代を動かす力になると信じている。
-                </p>
-              </div>
-              {/* POWER: AI COLLABORATION */}
-              <div className="rounded-2xl p-10 bg-[#2563eb] text-white flex flex-col h-full shadow-xl relative">
-                <span className="absolute -top-5 left-6 bg-white text-[#2563eb] font-extrabold text-lg px-6 py-2 rounded-full shadow-md border-2 border-[#2563eb] select-none" style={{letterSpacing: '0.08em'}}>POWER</span>
-                <h3 className="font-extrabold text-3xl mb-4 tracking-tight text-white mt-4">AI COLLABORATION</h3>
-                <div className="text-lg font-semibold mb-2 mt-2 text-white">AIとの協働が、組織の手を広げる</div>
-                <div className="border-t-2 border-white/40 my-3 w-12" />
-                <p className="whitespace-pre-line text-base leading-relaxed text-white">
-                  AIを中心に、構造の再設計を推し進める。
-                  式や仕組みを根本から組み替え、柔軟で多様な課題解決に挑む。
-                </p>
-              </div>
+            {/* CTAボタン */}
+            <div className="mt-20 flex justify-center">
+              <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white text-xl font-bold px-10 py-4 rounded-full shadow-lg transition-all duration-300">
+                今すぐAI協業する
+              </a>
             </div>
           </div>
         </section>

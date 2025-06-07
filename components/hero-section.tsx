@@ -37,7 +37,7 @@ export default function HeroSection() {
 
         {/* HILOWAVE Text - Adjusted position */}
         <div className="mt-4 lg:mt-6">
-          <div className="hilowave-text text-center lg:text-left text-[84px] sm:text-[128px] md:text-[192px] lg:text-[256px]">HILOWAVE</div>
+          <div className="hilowave-text text-center lg:text-left text-[clamp(40px,16vw,84px)]">HILOWAVE</div>
         </div>
 
         {/* Bottom Indicator */}

@@ -42,10 +42,10 @@ export default function MessageSection() {
     <div className="hero-gradient py-24 snap-start">
       <div className="max-w-7xl mx-auto px-6">
         <div className="space-y-10 japanese-text text-left">
-          <p className="text-lg md:text-2xl lg:text-4xl text-blue-500 mb-8">
+          <p className="text-[30px] md:text-2xl lg:text-4xl text-blue-500 mb-8">
             「それ、意味あるの？」って言われることに、どこか惹かれてしまう。
           </p>
-          <div className="text-[16px] sm:text-[20px] md:text-[24px] text-blue-500 leading-[1.8] sm:leading-[2.2] md:leading-[2.4] space-y-4">
+          <div className="text-[18px] sm:text-[20px] md:text-[24px] text-blue-500 leading-[1.8] sm:leading-[2.2] md:leading-[2.4] space-y-4">
             <p>
               効率とか、正解とか、そういうものを追い求める中で、<br />
               静かに失われていったコトがあると思っている。<br />
@@ -69,8 +69,8 @@ export default function MessageSection() {
         </div>
         {/* SPECIALITYセクション */}
         <div className="mt-32">
-          <div className="text-[84px] sm:text-[128px] md:text-[192px] lg:text-[256px] font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter">SPECIALITY</div>
-          <div className="text-[16px] sm:text-[24px] md:text-[36px] text-blue-500 mt-8 font-bold">現場でブリコラージュし、領域を跨いでサイ適を描く</div>
+          <div className="font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter text-[clamp(40px,16vw,84px)]">SPECIALITY</div>
+          <div className="text-[30px] sm:text-[24px] md:text-[36px] text-blue-500 mt-8 font-bold">現場でブリコラージュし、領域を跨いでサイ適を描く</div>
 
           {/* 3枚のカード（バリュー） */}
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
