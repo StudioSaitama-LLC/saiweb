@@ -24,7 +24,7 @@ export function InfiniteScroll() {
         {[...items, ...items, ...items].map((item, index) => (
           <div
             key={index}
-            className="mx-20 flex flex-col items-center"
+            className={`flex flex-col items-center ${isMobile ? 'mobile-tight-space' : 'mx-20'}`}
           >
             <span className={`${isMobile ? "text-4xl" : "text-[120px]"} font-bold text-[#3B82F6]`}>
               {item.ja}

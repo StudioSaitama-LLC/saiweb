@@ -70,7 +70,7 @@ export default function MessageSection() {
         {/* SPECIALITYセクション */}
         <div className="mt-32">
           <div className="font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter text-[84px] lg:text-[256px]">SPECIALITY</div>
-          <div className="text-[30px] sm:text-[24px] md:text-[36px] text-blue-500 mt-8 font-bold">現場でブリコラージュし、領域を跨いでサイ適を描く</div>
+          <div className="text-[30px] sm:text-[24px] md:text-[36px] text-blue-500 mt-8 font-bold japanese-text">現場でブリコラージュし、領域を跨いでサイ適を描く</div>
 
           {/* 3枚のカード（バリュー） */}
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
