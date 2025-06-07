@@ -69,7 +69,7 @@ export default function MessageSection() {
         </div>
         {/* SPECIALITYセクション */}
         <div className="mt-32">
-          <div className="font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter text-[clamp(40px,16vw,84px)]">SPECIALITY</div>
+          <div className="font-extrabold text-left text-[#3B82F6] leading-[0.8] tracking-[-0.02em] font-inter text-[84px] lg:text-[256px]">SPECIALITY</div>
           <div className="text-[30px] sm:text-[24px] md:text-[36px] text-blue-500 mt-8 font-bold">現場でブリコラージュし、領域を跨いでサイ適を描く</div>
 
           {/* 3枚のカード（バリュー） */}
