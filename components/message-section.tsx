@@ -6,7 +6,7 @@ export default function MessageSection() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="space-y-10 japanese-text text-left">
           <p className="text-[30px] md:text-2xl lg:text-4xl text-blue-500 mb-8">
-            「それ、意味あるの？」って言われることに、どこか惹かれてしまう。
+            「それ、意味あるの？」って言われるものに、どこか惹かれてしまう。
           </p>
           <div className="text-[20px] sm:text-[20px] md:text-[24px] text-blue-500 leading-[1.8] sm:leading-[2.2] md:leading-[2.4] space-y-4 font-bold">
             <p>

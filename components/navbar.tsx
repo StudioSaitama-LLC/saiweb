@@ -23,7 +23,7 @@ export default function Navbar() {
 
   const navItems = [
     { icon: Home, label: "ホーム", href: "#top" },
-    { icon: Instagram, label: "Instagram" },
+    { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/wazaoippon/" },
     { icon: Mail, label: "お問い合わせ", href: "#contact" },
   ]
 

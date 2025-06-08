@@ -31,11 +31,11 @@ export default function MembersSection() {
     },
     {
       id: 3,
-      name: "William Takagi",
+      name: "William Taka",
       nameEn: "",
       position: "業務執行社員\nSALES DIRECTOR",
       description:
-        "慶應義塾大学卒業後、みずほ銀行入行。国内大手グルメサービスを運営するスタートアップ企業Rettyにて営業・事業企画としてIPOを経験。その後、日本ロレアル勤務を経て、Google Japan にてStrategy Planning、Sales Opsとして日本法人の戦略策定、実行を担う。好きな釣りはサビキ釣り。",
+        "慶應義塾大学卒業後、メガバンク入行。国内スタートアップにて営業企画マネージャーとしてIPOを経験。その後、外資系メーカーを経て、Google JapanにてStrategy Planning、Sales Opsとして日本法人の戦略策定、実行を担う。好きな釣りはサビキ釣り。",
       image: "/images/takagi.png",
     },
     {
