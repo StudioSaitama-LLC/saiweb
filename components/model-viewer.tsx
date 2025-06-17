@@ -24,7 +24,7 @@ declare global {
 const ModelViewerComponent = () => {
   return (
     <model-viewer
-      src="/rhino-suigetsu.glb"
+      src="/suigetsu-rhino.glb"
       alt="水月の3Dモデル"
       auto-rotate
       camera-controls
