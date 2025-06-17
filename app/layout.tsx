@@ -16,9 +16,14 @@ const zenKakuGothicNew = Zen_Kaku_Gothic_New({
 })
 
 export const metadata: Metadata = {
-  title: "Studio Saitama",
-  description: "Discover the WAVE you need, and feel the New WAVE.",
-    generator: 'v0.dev'
+  title: "スタジオサイタマ合同会社",
+  description: "スタジオサイタマは、埼玉を拠点にAI/ICT/クリエイティブを駆使し、\"オルタナティブ\"の文化醸成を目指す、青春取り戻しカンパニーです。サイタマーだけど本社は東京です。",
+  generator: 'v0.dev',
+  openGraph: {
+    title: "スタジオサイタマ合同会社",
+    description: "スタジオサイタマは、埼玉を拠点にAI/ICT/クリエイティブを駆使し、\"オルタナティブ\"の文化醸成を目指す、青春取り戻しカンパニーです。サイタマーだけど本社は東京です。",
+    type: "website",
+  }
 }
 
 export default function RootLayout({
