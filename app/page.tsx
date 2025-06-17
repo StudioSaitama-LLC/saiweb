@@ -10,10 +10,11 @@ import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 import { SpecialitySection } from "@/components/speciality-section"
 import HeroSection from "@/components/hero-section"
+import PageWrapper from "@/components/PageWrapper"
 
 export default function Home() {
   return (
-    <>
+    <PageWrapper>
       <Navbar />
       <main className="min-h-screen overflow-x-hidden">
         <HeroSection />
@@ -26,6 +27,6 @@ export default function Home() {
         <ContactSection />
         <Footer />
       </main>
-    </>
+    </PageWrapper>
   );
 }

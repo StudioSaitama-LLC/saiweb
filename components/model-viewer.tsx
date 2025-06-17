@@ -20,6 +20,7 @@ declare global {
         'disable-pan'?: boolean;
         'disable-zoom'?: boolean;
         'disable-tap'?: boolean;
+        reveal?: string;
       }, HTMLElement>;
     }
   }
@@ -27,6 +28,7 @@ declare global {
 
 const ModelViewerComponent = () => {
   const [mobile, setMobile] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const checkMobile = () => setMobile(typeof window !== "undefined" && window.innerWidth < 1024);
@@ -41,9 +43,12 @@ const ModelViewerComponent = () => {
       alt="水月の3Dモデル"
       auto-rotate
       shadow-intensity="1"
+      rotation-per-second="60deg"
+      reveal={!mobile ? "auto" : undefined}
       {...(!mobile && { "camera-controls": true })}
       {...(mobile && { "disable-pan": true, "disable-zoom": true, "disable-tap": true })}
       style={{ width: '100%', height: '100%' }}
+      onLoad={() => setLoading(false)}
     />
   );
 }

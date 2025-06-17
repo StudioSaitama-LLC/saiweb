@@ -58,11 +58,6 @@ export default function HeroSection() {
             <span className="font-extrabold text-[#3B82F6] text-left leading-[0.9] tracking-[-0.02em] font-inter block" style={{fontSize: 'clamp(80px,18vw,236px)'}}>STUDIO</span>
             <span className="font-extrabold text-[#3B82F6] text-left leading-[0.9] tracking-[-0.02em] font-inter block" style={{fontSize: 'clamp(80px,18vw,236px)'}}>SAITAMA</span>
           </div>
-
-          {/* Bottom Indicator */}
-          <div className="flex justify-center mt-8">
-            <div className="w-16 h-1 bg-gray-800 rounded-full"></div>
-          </div>
         </div>
       </div>
     </>
