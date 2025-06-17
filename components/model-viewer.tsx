@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from "react"
+import dynamic from 'next/dynamic'
 
 declare global {
   namespace JSX {
@@ -20,11 +21,11 @@ declare global {
   }
 }
 
-export default function ModelViewer() {
+const ModelViewerComponent = () => {
   return (
     <model-viewer
-      src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-      alt="3Dモデル"
+      src="/rhino-suigetsu.glb"
+      alt="水月の3Dモデル"
       auto-rotate
       camera-controls
       shadow-intensity="1"
@@ -35,4 +36,12 @@ export default function ModelViewer() {
       style={{ width: '100%', height: '100%' }}
     />
   );
-} 
+}
+
+// クライアントサイドのみでレンダリング
+const ModelViewer = dynamic(() => Promise.resolve(ModelViewerComponent), {
+  ssr: false,
+  loading: () => <div className="w-full h-full bg-gray-200 animate-pulse" />
+});
+
+export default ModelViewer; 
