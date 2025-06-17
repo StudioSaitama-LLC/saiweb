@@ -19,7 +19,7 @@ export default function HeroSection() {
         <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
           <div className="flex flex-col lg:flex-row gap-12 items-center min-h-[60vh]">
             {/* Left Content */}
-            <div className="space-y-8 w-full pt-0 sm:pt-4">
+            <div className="space-y-8 w-full pt-0 sm:pt-4 mt-24 lg:mt-0">
               <div className="space-y-4">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                   <span className="text-blue-500">Discover the HORN you</span><br />
@@ -47,7 +47,7 @@ export default function HeroSection() {
             </div>
             {/* 3Dモデル - モバイル時はテキスト下に表示し、幅を調整 */}
             <div className="flex justify-center items-center mt-8 lg:hidden w-full">
-              <div className="w-full max-w-xs sm:max-w-sm h-[300px] mt-16" style={{ transform: 'scale(1.2)' }}>
+              <div className="w-full max-w-xs sm:max-w-sm h-[300px] mt-16" style={{ transform: 'scale(1.7)' }}>
                 <ModelViewer />
               </div>
             </div>
