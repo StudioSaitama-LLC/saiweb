@@ -43,7 +43,7 @@ const ModelViewerComponent = () => {
       alt="水月の3Dモデル"
       auto-rotate
       shadow-intensity="1"
-      rotation-per-second="60deg"
+      rotation-per-second="40deg"
       reveal={!mobile ? "auto" : undefined}
       {...(!mobile && { "camera-controls": true })}
       {...(mobile && { "disable-pan": true, "disable-zoom": true, "disable-tap": true })}
