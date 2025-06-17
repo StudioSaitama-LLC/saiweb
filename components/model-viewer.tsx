@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import dynamic from 'next/dynamic'
+import { useEffect, useState } from "react";
 
 declare global {
   namespace JSX {
@@ -16,23 +17,32 @@ declare global {
         'min-camera-orbit'?: string;
         'max-camera-orbit'?: string;
         'rotation-per-second'?: string;
+        'disable-pan'?: boolean;
+        'disable-zoom'?: boolean;
+        'disable-tap'?: boolean;
       }, HTMLElement>;
     }
   }
 }
 
 const ModelViewerComponent = () => {
+  const [mobile, setMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setMobile(typeof window !== "undefined" && window.innerWidth < 1024);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <model-viewer
       src="/suigetsu-rhino.glb"
       alt="水月の3Dモデル"
       auto-rotate
-      camera-controls
       shadow-intensity="1"
-      camera-orbit="0deg 75deg 105%"
-      min-camera-orbit="auto auto 50%"
-      max-camera-orbit="auto auto 150%"
-      rotation-per-second="30deg"
+      {...(!mobile && { "camera-controls": true })}
+      {...(mobile && { "disable-pan": true, "disable-zoom": true, "disable-tap": true })}
       style={{ width: '100%', height: '100%' }}
     />
   );
