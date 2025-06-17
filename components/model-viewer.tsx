@@ -44,9 +44,8 @@ const ModelViewerComponent = () => {
       auto-rotate
       shadow-intensity="1"
       rotation-per-second="40deg"
-      reveal={!mobile ? "auto" : undefined}
-      {...(!mobile && { "camera-controls": true })}
-      {...(mobile && { "disable-pan": true, "disable-zoom": true, "disable-tap": true })}
+      reveal="auto"
+      camera-controls={true}
       style={{ width: '100%', height: '100%' }}
       onLoad={() => setLoading(false)}
     />
