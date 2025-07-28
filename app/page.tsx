@@ -4,7 +4,8 @@ import Navbar from "@/components/navbar"
 import MessageSection from "@/components/message-section"
 import ValuesSection from "@/components/values-section"
 import OurWorksSection from "@/components/our-works-section"
-import WorksCardsSection from "@/components/works-cards-section"
+// import WorksCardsSection from "@/components/works-cards-section" // 一時的に非表示
+import AIXSection from "@/components/aix-section"
 import MembersSection from "@/components/members-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
@@ -22,7 +23,8 @@ export default function Home() {
         <ValuesSection />
         <SpecialitySection />
         <OurWorksSection />
-        <WorksCardsSection />
+        {/* <WorksCardsSection /> */} {/* 一時的に非表示 */}
+        <AIXSection />
         <MembersSection />
         <ContactSection />
         <Footer />
