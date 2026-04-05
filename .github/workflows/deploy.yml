@@ -35,6 +35,7 @@ jobs:
         run: pnpm build
         env:
           PAGES_BASE_PATH: /saiweb
+          NEXT_PUBLIC_BASE_PATH: /saiweb
 
       - uses: actions/upload-pages-artifact@v3
         with:

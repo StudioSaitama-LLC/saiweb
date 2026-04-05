@@ -40,7 +40,7 @@ const ModelViewerComponent = () => {
 
   return (
     <model-viewer
-      src="/suigetsu-rhino.glb"
+      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/suigetsu-rhino.glb`}
       alt="水月の3Dモデル"
       auto-rotate
       shadow-intensity="1"
