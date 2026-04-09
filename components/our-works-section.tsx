@@ -4,14 +4,14 @@ export default function OurWorksSection() {
       title: "WAZAO-IPPON",
       client: "日本の釣りに特化した釣りブランド",
       description: "これからの自然観の発掘をテーマに、日本伝統の釣竿「和竿」を中心に、ローカルな日本の水辺文化を模索する活動体。",
-      image: "/images/wazaoipponbackground.jpg",
+      image: "/images/wazaoipponbackground.webp",
       link: "https://wazao-ippon.com/"
     },
     {
       title: "ツカノマノスゴイサウナ",
       client: "渋谷屋上のポップアップサウナイベント",
       description: "「渋谷にサイタマを創る」とのコンセプトで開催した期間限定サウナイベント。取り壊しが決まっていた渋谷区神泉のビル屋上で週末限定4ヶ月間実施。700名以上を動員した。ツカノマノフードコート連動企画。",
-      image: "/images/ツカノマノスゴイサウナ.jpg",
+      image: "/images/tsukanoma-no-sugoi-sauna.webp",
       link: "https://sauna-ikitai.com/saunas/7004"
     }
   ]

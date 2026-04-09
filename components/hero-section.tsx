@@ -1,6 +1,5 @@
 "use client"
 
-import Script from 'next/script'
 import dynamic from 'next/dynamic'
 
 const ModelViewer = dynamic(() => import('./model-viewer'), {
@@ -10,11 +9,6 @@ const ModelViewer = dynamic(() => import('./model-viewer'), {
 
 export default function HeroSection() {
   return (
-    <>
-      <Script
-        type="module"
-        src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
-      />
       <div className="hero-gradient min-h-screen relative overflow-hidden snap-start">
         <div className="max-w-7xl mx-auto px-6 pt-24 pb-16">
           <div className="flex flex-col lg:flex-row gap-12 items-center min-h-[60vh]">
@@ -60,6 +54,5 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-    </>
   )
 }

@@ -1,5 +1,7 @@
+"use client"
+
 import * as React from "react"
-import { useIsMobile } from "@/hooks/use-mobile"
+import { useEffect, useState } from "react"
 
 const items = [
   { ja: "🦏", en: "Rhino" },
@@ -16,7 +18,14 @@ const items = [
 ]
 
 export function InfiniteScroll() {
-  const isMobile = useIsMobile()
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768)
+    check()
+    window.addEventListener("resize", check)
+    return () => window.removeEventListener("resize", check)
+  }, [])
 
   return (
     <div className="relative w-full overflow-hidden bg-transparent py-12">
@@ -47,12 +56,16 @@ export function InfiniteScroll() {
         {[...items, ...items, ...items].map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center ${isMobile ? 'mobile-tight-space' : 'mx-20'}`}
+            className={`flex flex-col items-center ${isMobile ? "mobile-tight-space" : "mx-20"}`}
           >
-            <span className={`${isMobile ? "text-[3.5rem]" : "text-[120px]"} font-bold text-[#3B82F6]`}>
+            <span
+              className={`${isMobile ? "text-[3.5rem]" : "text-[120px]"} font-bold text-[#3B82F6]`}
+            >
               {item.ja}
             </span>
-            <span className={`${isMobile ? "text-lg" : "text-[24px]"} mt-1 text-[#3B82F6] font-bold`}>
+            <span
+              className={`${isMobile ? "text-lg" : "text-[24px]"} mt-1 text-[#3B82F6] font-bold`}
+            >
               {item.en}
             </span>
           </div>
@@ -60,4 +73,4 @@ export function InfiniteScroll() {
       </div>
     </div>
   )
-} 
+}
