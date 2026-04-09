@@ -18,7 +18,7 @@ export default function MembersSection() {
       position: "代表社員\nTECHNICAL DIRECTOR",
       description:
         "慶應義塾大学卒業後、株式会社NTT データ入社。NTT データにて大規模システム開発を経験後、理化学研究所発VRベンチャーハコスコにて開発部長/プロダクトマネージャとしてXR関連新規技術、事業開発に従事。好きな釣りは渓流トラウト。",
-      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/chiaki.png`,
+      image: "/images/chiaki.png`,
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ export default function MembersSection() {
       position: "業務執行社員\nBRANDING DIRECTOR",
       description:
         "慶應義塾大学卒業後、株式会社博報堂入社。ブランド戦略部門にてアウターブランディングをはじめ、組織のインターナルブランディングやマーケティングコミュニケーションなど広範に従事。好きな釣りはレイクトラウト・マルタウグイ・サツキマスなど5月の釣り。",
-      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/tomhirosoeno.png`,
+      image: "/images/tomhirosoeno.png`,
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ export default function MembersSection() {
       position: "業務執行社員\nSALES DIRECTOR",
       description:
         "慶應義塾大学卒業後、メガバンク入行。国内スタートアップにて営業企画マネージャーとしてIPOを経験。その後、外資系メーカーを経て、Google JapanにてStrategy Planning、Sales Opsとして日本法人の戦略策定、実行を担う。好きな釣りはサビキ釣り。",
-      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/takagi.png`,
+      image: "/images/takagi.png`,
     },
     {
       id: 4,
@@ -45,7 +45,7 @@ export default function MembersSection() {
       position: "BizDev",
       description:
         "慶應義塾大学卒業後、大手外資系IT企業に入社。ITコンサルタントとして業務改善、システム導入のコンサルティングの提案からデリバリーまでを推進。特に人事領域のコンサルティングを強みとし、タレントマネジメントや、人材組織管理・給与・勤怠などの基幹業務システムのプロジェクトに従事。スタートアップのM&A支援・PMI なども行っている。好きな釣りは小鮒釣り。",
-      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/ito.png`,
+      image: "/images/ito.png`,
     },
     {
       id: 5,
@@ -54,7 +54,7 @@ export default function MembersSection() {
       position: "CREATIVE PRODUCER",
       description:
         "2016年 オーストラリアから帰国し、株式会社カラス入社。2020年にCEKAI に参加。クリエイティブ・アートディレクション、プランニング・コピーライティングを領域に、東京五輪やグローバルブランドを多数担当した。2025年から拠点をNYに移す。好きな釣りはエギング。",
-      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/mura.png`,
+      image: "/images/mura.png`,
     },
     {
       id: 6,
@@ -63,7 +63,7 @@ export default function MembersSection() {
       position: "サイの仲間達",
       description:
         "プロジェクトに合わせてチームを拡張し、必要に応じてパートナーと連携します。",
-      image: `${process.env.NEXT_PUBLIC_BASE_PATH || ""}/images/friends.png`,
+      image: "/images/friends.png`,
     },
   ]
 
