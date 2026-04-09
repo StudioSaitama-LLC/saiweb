@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 text-center space-y-2">
         <div className="text-lg font-bold">スタジオサイタマ合同会社</div>
         <div className="text-base">info@studiosaitama.com</div>
-        <div className="text-xs text-white/70 mt-2">© 2025 スタジオサイタマ合同会社</div>
+        <div className="text-xs text-white/70 mt-2">© 2025 Studio Saitama LLC</div>
       </div>
     </footer>
   )

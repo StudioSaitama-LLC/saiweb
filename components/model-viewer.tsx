@@ -22,6 +22,7 @@ declare global {
         'disable-tap'?: boolean;
         'disable-rotate'?: boolean;
         reveal?: string;
+        loading?: string;
       }, HTMLElement>;
     }
   }
@@ -46,6 +47,7 @@ const ModelViewerComponent = () => {
       shadow-intensity="1"
       rotation-per-second="40deg"
       reveal="auto"
+      loading="lazy"
       camera-controls={!mobile}
       disable-pan={mobile}
       disable-zoom={mobile}

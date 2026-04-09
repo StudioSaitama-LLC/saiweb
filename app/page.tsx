@@ -2,9 +2,7 @@
 
 import Navbar from "@/components/navbar"
 import MessageSection from "@/components/message-section"
-import ValuesSection from "@/components/values-section"
 import OurWorksSection from "@/components/our-works-section"
-// import WorksCardsSection from "@/components/works-cards-section" // 一時的に非表示
 import AIXSection from "@/components/aix-section"
 import MembersSection from "@/components/members-section"
 import ContactSection from "@/components/contact-section"
@@ -20,10 +18,8 @@ export default function Home() {
       <main className="min-h-screen overflow-x-hidden">
         <HeroSection />
         <MessageSection />
-        <ValuesSection />
         <SpecialitySection />
         <OurWorksSection />
-        {/* <WorksCardsSection /> */} {/* 一時的に非表示 */}
         <AIXSection />
         <MembersSection />
         <ContactSection />
