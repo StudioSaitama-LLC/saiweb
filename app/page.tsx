@@ -2,7 +2,7 @@
 
 import Navbar from "@/components/navbar"
 import MessageSection from "@/components/message-section"
-import OurWorksSection from "@/components/our-works-section"
+import WorksSection from "@/components/works-section"
 import AIXSection from "@/components/aix-section"
 import MembersSection from "@/components/members-section"
 import ContactSection from "@/components/contact-section"
@@ -19,7 +19,7 @@ export default function Home() {
         <HeroSection />
         <MessageSection />
         <SpecialitySection />
-        <OurWorksSection />
+        <WorksSection />
         <AIXSection />
         <MembersSection />
         <ContactSection />
