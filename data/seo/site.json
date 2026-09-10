@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "siteId": "saiweb",
+  "name": "Studio Saitama",
+  "origin": "https://studiosaitama.com",
+  "properties": ["sc-domain:studiosaitama.com", "https://studiosaitama.com/"],
+  "filters": [],
+  "minImpressions28": 30,
+  "allowedPaths": ["/"],
+  "allowedPathPrefixes": [],
+  "initialState": "blocked_pending_dedicated_gsc_credentials",
+  "businessObjective": "AI活用・業務刷新を検討するスモールチームからの相談につながる検索流入",
+  "contentPolicy": "ホーム単位で観察。サービス、価格、実績を創作しない。構造・canonical・robots・noindex・URL変更は別判断。"
+}
